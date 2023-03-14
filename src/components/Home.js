@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <section className="pt-24 table w-full h-screen">
+    <section id="home" className="pt-24 table w-full h-screen">
       <div className="table-cell align-middle h-full">
         <div className="text-[1.2rem] font-semibold w-[100%]">
           Hi, my name is

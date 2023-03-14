@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleNavigation = useCallback(
     (e) => {
       const window = e.currentTarget;
-      if (y < 20) {
+      if (window.scrollY < 20) {
         setScrollDir("top");
       } else if (y > window.scrollY) {
         setScrollDir("up");
@@ -34,26 +34,19 @@ const Navbar = () => {
     };
   }, [handleNavigation]);
 
+  console.log(window.scrollY);
+  console.log(window.scrollY);
+
   useEffect(() => {
     if (scrollDir === "up") {
-      //   setContainerClass({
-      //     background: "bg-secondary drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)]",
-      //     menu: "text-primary md:hover:text-info",
-      //     button:
-      //     "text-primary bg-info hover:bg-info focus:ring-4 focus:outline-none focus:ring-blue-800 rounded-lg  px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-secondary dark:focus:ring-blue-800",
-      //   });
       setContainerClass({
-        background: "bg-primary drop-shadow-[0_10px_10px_rgba(0,0,0,0.25)]",
-        menu: "text-secondary md:hover:text-info",
-        button:
-          "text-primary bg-secondary hover:bg-info focus:ring-4 focus:outline-none focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-3 md:mr-0",
+        ...containerClass,
+        background: "bg-primary drop-shadow-[0_2px_8px_#6b6b6b]",
       });
     } else {
       setContainerClass({
+        ...containerClass,
         background: "bg-primary",
-        menu: "text-secondary md:hover:text-info",
-        button:
-          "text-primary bg-secondary hover:bg-info focus:ring-4 focus:outline-none focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-3 md:mr-0",
       });
     }
   }, [scrollDir]);
@@ -75,14 +68,15 @@ const Navbar = () => {
         >
           <ul class="flex flex-col p-4 mt-4 border md:flex-row md:space-x-20 md:mt-0 md:border-0">
             {[
-              ["About", "/dashboard"],
-              ["Work", "/projects"],
-              ["Contact", "/contact"],
+              ["About", "#about"],
+              ["Work", "#work"],
+              ["Contact", "#contact"],
             ].map(([title, url]) => (
               <li>
                 <a
                   href={url}
                   className={`block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:p-0 ${containerClass.menu}`}
+                  onClick={() => setScrollDir("down")}
                 >
                   {title}
                 </a>
