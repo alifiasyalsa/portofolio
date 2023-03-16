@@ -1,6 +1,6 @@
 const Sidebar = () => {
   return (
-    <aside class="flex justify-center w-1/12 h-screen">
+    <aside className="flex justify-center w-1/12 h-screen">
       <div className="block fixed bottom-0 after:content-[''] after:w-[1px] after:h-[100px] after:m-auto after:bg-secondary after:block">
         <a
           href="https://github.com/alifiasyalsa"
@@ -14,9 +14,9 @@ const Sidebar = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="#388087"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="w-[20px] hover:stroke-info my-5"
           >
             <title>GitHub</title>
@@ -35,9 +35,9 @@ const Sidebar = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="#388087"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="w-[20px] hover:stroke-info my-5"
           >
             <title>LinkedIn</title>
