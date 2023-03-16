@@ -12,12 +12,12 @@ function App() {
       <Navbar />
       <section className="flex flex-nowrap">
         <Sidebar />
-        <content className="w-full px-32">
+        <div className="w-full px-32">
           <Home />
           <About />
           <Work />
           <Contact />
-        </content>
+        </div>
         <RightSidebar />
       </section>
     </main>
