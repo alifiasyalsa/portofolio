@@ -11,9 +11,18 @@ const Contact = () => {
         </p>
         <button
           type="button"
-          className={"text-primary bg-secondary hover:bg-info focus:ring-4 focus:outline-none focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mt-8"}
+          className={
+            "text-primary bg-secondary hover:bg-info focus:ring-4 focus:outline-none focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mt-8"
+          }
         >
-          Say Hello
+          <a
+            href="mailto:alifiasyalsabila96@gmail.com"
+            aria-label="Contact me"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Say Hello
+          </a>
         </button>
       </div>
     </section>

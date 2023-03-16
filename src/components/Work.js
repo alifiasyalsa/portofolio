@@ -78,6 +78,10 @@ const Work = () => {
       >
         <span className="bg-primary pr-5">This is my work</span>
       </h3>
+      <div className="w-[50%] text-sm font-semibold my-5">
+        Here are a few selection of the projects I have worked on over the
+        years.
+      </div>
       <div className="mt-16">
         {projects.map((item, index) => {
           const isRepoDisabled = item.repository === null;
