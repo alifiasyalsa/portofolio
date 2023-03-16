@@ -52,21 +52,22 @@ const Work = () => {
       link: null,
       desc: "An online mathematics competitions web app for HIMAPTIKA IKIP Siliwangi, where user can see HIMAPTIKA landing page, organize the competition and etc.",
     },
-    // {
-    //   name: "Digios Project Management System",
-    //   image: "project-dios.jpg",
-    //   techStack: [
-    //     "Code igniter",
-    //     "Bootstrap",
-    //     "PHP",
-    //     "Javascript",
-    //     "JQuery",
-    //     "MySQL",
-    //   ],
-    //   repository: "https://gitlab.com/atikapane/dios-pms",
-    //   link: null,
-    //   desc: "DIOS PMS is a web-based application intended to monitor employee work progress at Digital Oasis. Available features include employee data management, project data management, reporting and monitoring of employee work progress",
-    // },
+    {
+      name: "DIOS PMS",
+      image: "project-dios.jpg",
+      year: "2021",
+      techStack: [
+        "Code igniter",
+        "Bootstrap",
+        "PHP",
+        "Javascript",
+        "JQuery",
+        "MySQL",
+      ],
+      repository: "https://gitlab.com/atikapane/dios-pms",
+      link: null,
+      desc: "An employee work progress monitoring app for Digital Oasis. Available features include employee data management, project data management, reporting and monitoring of employee work progress",
+    },
   ];
 
   return (
@@ -88,13 +89,13 @@ const Work = () => {
                 className={`flex mb-32 w-full text-md h-[320px] text-right`}
                 key={index}
               >
-                <div className="flex-row md:flex-col order-1">
+                <div className="flex-row md:flex-col order-1 w-[55%]">
                   <img
                     src={item.image}
                     className="object-fill h-full shadow-2xl"
                   />
                 </div>
-                <div className="flex flex-row flex-wrap md:flex-col w-full md:w-1/2 order-2 h-full justify-center p-0 md:pl-5">
+                <div className="flex flex-row flex-wrap md:flex-col w-full md:w-[45%] order-2 h-full justify-center p-0 md:pl-5">
                   <h6>{item.year}</h6>
                   <h4 className="text-secondary">{item.name}</h4>
                   <p className="mt-5">{item.desc}</p>
@@ -179,13 +180,13 @@ const Work = () => {
 
           return (
             <div className="flex mb-32 w-full text-md h-[320px]" key={index}>
-              <div className="flex flex-row md:flex-col order-1 md:order-2 ">
+              <div className="flex flex-row md:flex-col order-1 md:w-[55%] md:order-2 ">
                 <img
                   src={item.image}
                   className="object-fill h-full shadow-2xl"
                 />
               </div>
-              <div className="flex flex-row flex-wrap md:flex-col w-full md:w-1/2 order-2 md:order-1 h-full justify-center p-0 md:pr-5">
+              <div className="flex flex-row flex-wrap md:flex-col w-full md:w-[45%] order-2 md:order-1 h-full justify-center p-0 md:pr-5">
                 <h6>{item.year}</h6>
                 <h5 className="text-secondary">{item.name}</h5>
                 <p className="mt-5">{item.desc}</p>
