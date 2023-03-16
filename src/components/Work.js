@@ -6,7 +6,7 @@ const Work = () => {
       year: "2022",
       techStack: ["React JS", "Tailwind CSS"],
       repository: "https://github.com/alifiasyalsa/portofolio",
-      link: "http://localhost:3000",
+      link: "https://alifiasyalsabila.netlify.app",
       desc: "A showcase of my project and also my Tailwind CSS learning project. In the future I will continue to make adjustments to this website, especially in terms of website responsiveness.",
     },
     {
