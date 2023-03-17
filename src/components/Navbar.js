@@ -33,7 +33,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleNavigation);
     };
   }, [handleNavigation]);
-  
+
   useEffect(() => {
     if (scrollDir === "up") {
       setContainerClass({
@@ -105,7 +105,9 @@ const Navbar = () => {
             ))}
           </ul>
           <button type="button" className={`${containerClass.button} ml-10`}>
-            Resume
+            <a href="CV-ALIFIA_SYALSABILA.pdf" target="_blank">
+              Resume
+            </a>
           </button>
         </div>
       </div>
