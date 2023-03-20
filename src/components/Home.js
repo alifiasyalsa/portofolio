@@ -15,7 +15,7 @@ const Home = () => {
           </span>
         </div>
         <div className="text-[1rem] w-4/6 leading-7">
-          I&apos;m a web developer, specialize in building reusable and maintainable
+          I&apos;m a web developer specialize in building reusable and maintainable
           front-end components at{" "}
           <a
             href="https://wifus.id/"

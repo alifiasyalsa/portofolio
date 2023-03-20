@@ -15,14 +15,14 @@ const About = () => {
             <span className="bg-primary">This is me</span>
           </h3>
           <p>
-            My name is Alifia Syalsabila, I am a front-end web developer. I
-            started my coding journey about 5 years ago and till now I have
-            experience building and maintaining (sometimes designing) few web
+            My name is Alifia Syalsabila, and I am a front-end web developer. I
+            started my coding journey about five years ago, and till now, I have
+            experience building and maintaining (sometimes designing) a few web
             applications with various tools and frameworks.
           </p>
           <p>
-            Fast forward today, I had the opportunity to work at WIFUS
-            Healthcare. My main focus these days is building and maintaining
+            Fast forward to today, I had the opportunity to work at WIFUS
+            Healthcare. My main focus these days is building and maintaining the
             end-to-end user interface of a clinic management system using Next
             JS.
           </p>

@@ -7,7 +7,7 @@ const Work = () => {
       techStack: ["React JS", "Tailwind CSS"],
       repository: "https://github.com/alifiasyalsa/portofolio",
       link: "https://alifiasyalsabila.netlify.app",
-      desc: "A showcase of my project and also my Tailwind CSS learning project. In the future I will continue to make adjustments to this website, especially in terms of website responsiveness.",
+      desc: "A showcase of my project and also my Tailwind CSS learning project. In the future, I will continue to make adjustments to this website, especially regarding website responsiveness.",
     },
     {
       name: "WIFUS Healthcare",
@@ -16,7 +16,7 @@ const Work = () => {
       techStack: ["React JS", "Next JS", "Core UI", "JQuery", "Laravel"],
       repository: null,
       link: "https://wifus.id",
-      desc: "A health information ecosystem provider made by Wifus Healtcare. It allows user to record patient electronic medial record, handle the pharmacy, the transaction, etc.",
+      desc: "A health information ecosystem provider made by Wifus Healthcare. It allows users to record patients electronic medical records, handle the pharmacy, the transaction, etc.",
     },
     {
       name: "Ilea Article Section and Management",
@@ -25,7 +25,7 @@ const Work = () => {
       techStack: ["Laravel", "PHP", "Bootstrap", "JQuery", "MySQL"],
       repository: null,
       link: "https://ilea.or.id/artikels",
-      desc: "A catalogue of articles published by Indonesian Literacy Educators Association where user can see the list of available articles and also read the article.",
+      desc: "A catalogue of articles published by the Indonesian Literacy Educators Association where users can see the list of available articles and also read the article.",
     },
     {
       name: "Gymnasium Reservation Admin App",
@@ -34,7 +34,7 @@ const Work = () => {
       techStack: ["Bootstrap", "PHP", "Javascript", "JQuery", "MySQL"],
       repository: "https://github.com/alifiasyalsa/Panathayuda",
       link: null,
-      desc: "A reservation and management application for the Panatayudha sports building. Feature includes master data, field scheduling and field transaction(reservation & payment)",
+      desc: "A reservation and management application for the Panatayudha sports building. Feature includes master data, field scheduling and field transaction(reservation & payment).",
     },
     {
       name: "Online Math Competition App",
@@ -50,7 +50,7 @@ const Work = () => {
       ],
       repository: "https://github.com/alifiasyalsa/kmo-himpatika",
       link: null,
-      desc: "An online mathematics competitions web app for HIMAPTIKA IKIP Siliwangi, where user can see HIMAPTIKA landing page, organize the competition and etc.",
+      desc: "An online mathematics competitions web app for HIMAPTIKA IKIP Siliwangi, where users can see HIMAPTIKA landing page, organize the competition, etc.",
     },
     {
       name: "DIOS PMS",
@@ -66,7 +66,7 @@ const Work = () => {
       ],
       repository: "https://gitlab.com/atikapane/dios-pms",
       link: null,
-      desc: "An employee work progress monitoring app for Digital Oasis. Available features include employee data management, project data management, reporting and monitoring of employee work progress",
+      desc: "An employee work progress monitoring app for Digital Oasis. Available features include employee data management, project data management, reporting and monitoring of employee work progress.",
     },
   ];
 
