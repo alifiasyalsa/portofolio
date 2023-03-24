@@ -1,6 +1,6 @@
 const RightSidebar = () => {
   return (
-    <aside className="flex justify-center w-1/12 h-screen">
+    <aside className="flex justify-center h-screen invisible md:visible w-0 md:w-1/12">
       <div className="block text-sm fixed bottom-0 after:content-[''] after:w-[1px] after:h-[100px] after:m-auto after:bg-secondary after:block">
         <a
           href="mailto:alifiasyalsabila96@gmail.com"

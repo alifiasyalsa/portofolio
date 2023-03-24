@@ -71,14 +71,14 @@ const Work = () => {
   ];
 
   return (
-    <section id="work" className="w-full pt-10 h-min-screen">
+    <section id="work" className="w-full pt-[5rem] h-min-screen">
       <h3
-        className="text-secondary w-[50%] text-left border-b-[1px] border-b-secondary"
+        className="text-secondary w-full md:w-[60%] text-left border-b-[1px] border-b-secondary"
         style={{ lineHeight: "0.1em" }}
       >
         <span className="bg-primary pr-5">This is my work</span>
       </h3>
-      <div className="w-[50%] text-sm font-semibold my-5">
+      <div className="w-full lg:w-[60%] text-sm font-semibold my-5">
         Here are a few selection of the projects I have worked on over the
         years.
       </div>
@@ -90,31 +90,39 @@ const Work = () => {
           if (index % 2 === 0) {
             return (
               <div
-                className={`flex mb-32 w-full text-md h-[320px] text-right`}
+                className={`flex mb-10 md:mb-32 h-fit w-full text-md md:h-full md:justify-center text-left md:text-right flex-wrap space-y-5 md:flex-none md:space-y-0`}
                 key={index}
               >
-                <div className="flex-row md:flex-col order-1 w-[55%]">
+                <div className="text-left visible md:hidden">
+                  <h4 className="text-secondary">
+                    {item.name}{" "}
+                    <span className="text-info text-[15px]">({item.year})</span>
+                  </h4>
+                </div>
+                <div className="flex flex-row md:flex-col order-none md:order-1 w-screen md:w-[55%] justify-center align-center">
                   <img
                     src={item.image}
-                    className="object-fill h-full shadow-2xl"
+                    className="object-fill h-auto lg:h-full shadow-2xl"
                   />
                 </div>
-                <div className="flex flex-row flex-wrap md:flex-col w-full md:w-[45%] order-2 h-full justify-center p-0 md:pl-5">
-                  <h6>{item.year}</h6>
-                  <h4 className="text-secondary">{item.name}</h4>
-                  <p className="mt-5">{item.desc}</p>
-                  <ul className="mt-5">
+                <div className="flex flex-row flex-wrap md:flex-col order-none md:order-2 w-full md:w-[45%] p-0 md:pl-5">
+                  <h6 className="hidden md:block">{item.year}</h6>
+                  <h4 className="text-secondary hidden md:block">
+                    {item.name}
+                  </h4>
+                  <p className="mt-5 w-full">{item.desc}</p>
+                  <ul className="mt-5 w-full">
                     {item.techStack.map((tech) => (
                       <li
                         key={`${item.name}-${tech}`}
-                        className="inline-block ml-2 text-sm font-semibold"
+                        className="inline-block ml-0 md:ml-2 text-sm font-semibold"
                       >
                         {tech}
                       </li>
                     ))}
                   </ul>
-                  <ul>
-                    <li className="inline-block ml-2">
+                  <ul className="w-full">
+                    <li className="inline-block md:ml-2">
                       <a
                         href={item.repository}
                         aria-label="GitHub"
@@ -137,7 +145,7 @@ const Work = () => {
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          className="w-[20px] hover:stroke-info my-5"
+                          className="w-[20px] hover:stroke-info mt-5"
                         >
                           <title>GitHub</title>
                           <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
@@ -167,7 +175,7 @@ const Work = () => {
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          className="w-[20px] hover:stroke-info my-5"
+                          className="w-[20px] hover:stroke-info mt-5"
                         >
                           <title>External Link</title>
                           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -183,18 +191,27 @@ const Work = () => {
           }
 
           return (
-            <div className="flex mb-32 w-full text-md h-[320px]" key={index}>
-              <div className="flex flex-row md:flex-col order-1 md:w-[55%] md:order-2 ">
+            <div
+              className="flex mb-10 md:mb-32 h-fit w-full text-md  md:h-full md:justify-center text-left flex-wrap space-y-5 md:flex-none md:space-y-0"
+              key={index}
+            >
+              <div className="text-left visible md:hidden">
+                <h4 className="text-secondary">
+                  {item.name}{" "}
+                  <span className="text-info text-[15px]">({item.year})</span>
+                </h4>
+              </div>
+              <div className="flex flex-row md:flex-col order-none md:order-2 w-screen md:w-[55%] justify-center align-center">
                 <img
                   src={item.image}
-                  className="object-fill h-full shadow-2xl"
+                  className="object-fill h-auto lg:h-full shadow-2xl"
                 />
               </div>
-              <div className="flex flex-row flex-wrap md:flex-col w-full md:w-[45%] order-2 md:order-1 h-full justify-center p-0 md:pr-5">
-                <h6>{item.year}</h6>
-                <h5 className="text-secondary">{item.name}</h5>
-                <p className="mt-5">{item.desc}</p>
-                <ul className="mt-5">
+              <div className="flex flex-row flex-wrap md:flex-col w-full md:w-[45%] order-none md:order-1 h-full md:justify-center p-0 md:pr-5">
+                <h6 className="hidden md:block">{item.year}</h6>
+                <h4 className="text-secondary hidden md:block">{item.name}</h4>
+                <p className="mt-5 w-full">{item.desc}</p>
+                <ul className="mt-5 w-full">
                   {item.techStack.map((tech) => (
                     <li
                       key={`${item.name}-${tech}`}
@@ -205,7 +222,7 @@ const Work = () => {
                   ))}
                 </ul>
                 <ul>
-                  <li className="inline-block mr-2">
+                  <li className="inline-block md:mr-2">
                     <a
                       href={item.repository}
                       aria-label="GitHub"
@@ -228,14 +245,14 @@ const Work = () => {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="w-[20px] hover:stroke-info my-5"
+                        className="w-[20px] hover:stroke-info mt-5"
                       >
                         <title>GitHub</title>
                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                       </svg>
                     </a>
                   </li>
-                  <li className="inline-block mr-2">
+                  <li className="inline-block md:mr-2">
                     <a
                       href={item.link}
                       aria-label="External Link"
@@ -258,7 +275,7 @@ const Work = () => {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="w-[20px] hover:stroke-info my-5"
+                        className="w-[20px] hover:stroke-info mt-5"
                       >
                         <title>External Link</title>
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>

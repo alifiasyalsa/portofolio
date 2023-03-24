@@ -4,7 +4,7 @@ const Contact = () => {
       <div className="table-cell align-middle text-center h-full">
         <h3 className="text-secondary p-2">What&apos;s Next ?</h3>
         <h2>GET IN TOUCH</h2>
-        <p className="p-5 px-44">
+        <p className="p-5 md:px-44">
           Thank you for scrolling this far. I am currently open to new
           opportunities, and please feel free to reach out to me if you have any
           further questions or would like to discuss potential opportunities.

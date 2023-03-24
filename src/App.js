@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <section className="flex flex-nowrap">
         <Sidebar />
-        <div className="w-full px-32">
+        <div className="w-full px-7 sm:px-8 xl:px-32">
           <Home />
           <About />
           <Work />
