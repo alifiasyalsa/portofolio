@@ -105,7 +105,7 @@ const Navbar = () => {
             ))}
           </ul>
           <button type="button" className={`${containerClass.button} ml-10`}>
-            <a href="CV-ALIFIA_SYALSABILA.pdf" target="_blank">
+            <a href="CV Alifia Syalsabila - Frontend Developer.pdf" target="_blank">
               Resume
             </a>
           </button>
