@@ -20,7 +20,7 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
           >
-            WIFUS Healtcare
+            PT. Sinergi Inti Dinamika
           </a>
           .
         </div>
